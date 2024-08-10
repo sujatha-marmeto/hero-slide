@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splide Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dropdown">
+        <label for="position-select">Select Position:</label>
+        <select id="position-select">
+            <option value="slideshow__text--top-left">Top Left</option>
+            <option value="slideshow__text--top-center">Top Center</option>
+            <option value="slideshow__text--top-right">Top Right</option>
+            <option value="slideshow__text--center-left">Center Left</option>
+            <option value="slideshow__text--center">Center</option>
+            <option value="slideshow__text--center-right">Center Right</option>
+            <option value="slideshow__text--bottom-left">Bottom Left</option>
+            <option value="slideshow__text--bottom-center">Bottom Center</option>
+            <option value="slideshow__text--bottom-right">Bottom Right</option>
+        </select>
+    </div>
+
+    <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list" id="slider-list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
